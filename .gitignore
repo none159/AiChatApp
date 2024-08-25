@@ -8,6 +8,7 @@ dist/
 *.spec
 .DS_Store
 .idea/
+chatapp
 chatapp/Lib/site-packages
 /chatapp/Scripts/activate'
 chatapp/share/man/man1/isympy.1

@@ -1,0 +1,13 @@
+
+venv/
+__pycache__/
+*.py[cod]
+.env
+build/
+dist/
+*.spec
+.DS_Store
+.idea/
+chatapp/Lib/site-packages
+/chatapp/Scripts/activate'
+chatapp/share/man/man1/isympy.1

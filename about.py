@@ -13,7 +13,7 @@ class MainAboutWindow(QWidget):
         self.setFixedSize(self.width(), self.height())
         self.center()
 
-        # Title
+
         self.label = QLabel("About Us")
         font = QFont()
         font.setPointSize(20)
@@ -43,7 +43,6 @@ class MainAboutWindow(QWidget):
         ybox.setContentsMargins(40, 40, 40, 40)  
         self.setLayout(ybox)
 
-        # StyleSheet
         self.setStyleSheet("""
             * {
                 background-color: #222222;

@@ -83,7 +83,6 @@ class MainHomeWindow(QMainWindow):
                   (screen.height() - size.height()) // 2)
      def encrypt_data(self,data):
          self.trialopen=True
-         print(os.getenv("TRIAL_KEY"))
          fernet = Fernet(os.getenv("TRIAL_KEY").encode())
          encrypted_data = fernet.encrypt(data.encode())
          return encrypted_data

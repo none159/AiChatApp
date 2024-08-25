@@ -41,7 +41,7 @@ class MainChatWindow(QWidget):
          self.setting.setDisabled(True)
          self.setting.setCursor(QCursor(QtCore.Qt.PointingHandCursor))
          self.check_trial()
-         self.setting.setGeometry(0, 0, 30, 30)
+         self.setting.setGeometry(0, 10, 30, 30)
          self.setting.clicked.connect(self.settingwindow)
          self.output_log.setFont(font)
          self.btn_submit = QPushButton("submit")

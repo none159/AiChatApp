@@ -114,8 +114,10 @@ class MainloginWindow(QWidget):
                     cluster = MongoClient(connection)
                     db = cluster["Users"]
                     collection = db["User"] 
+                    collection2 = db["Settings"]
                     user = {"email":self.email.text().lower(),"password":self.password.text()}
                     result = collection.find_one({"email":user["email"]})
+                    result2 = collection2.find_one({"email":user["email"]})
                     if result and bcrypt.checkpw(self.password.text().encode('utf-8'), result["password"]):
                               user = {"username":result["username"],"email":result["email"],"password":result["password"]}
                               messagebox.setIcon(QMessageBox.Information)
@@ -123,8 +125,12 @@ class MainloginWindow(QWidget):
                               messagebox.setText("You successfully Logged in")
                               messagebox.exec_()
                               self.close()  
-                              self.home_window = MainChatWindow(username=result["username"])  
-                              self.home_window.show()
+                              if result2:
+                                   self.home_window = MainChatWindow(username=result["username"],trialclose=True,email=result["email"],bot_name=result2["botname"])  
+                                   self.home_window.show()
+                              else:
+                                   self.home_window = MainChatWindow(username=result["username"],trialclose=True,email=result["email"])  
+                                   self.home_window.show()
                     else:
                               messagebox.setIcon(QMessageBox.Information)
                               messagebox.setWindowTitle("Invalid User")

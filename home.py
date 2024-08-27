@@ -116,7 +116,7 @@ class MainHomeWindow(QMainWindow):
      def chatwindow(self):
          self.check_trial()
          if self.chat_window is None and self.trialopen:
-          self.chat_window = MainChatWindow(trialopen=self.trialopen)
+          self.chat_window = MainChatWindow(trialclose=not self.trialopen)
           self.chat_window.show()
           self.chat_window.raise_()
           self.close()

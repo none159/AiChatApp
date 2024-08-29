@@ -86,6 +86,7 @@ class MainsignupWindow(QWidget):
             self.home_window = MainHomeWindow()  
             self.home_window.show()
      def signup(self):
+       self.sign.setCursor(QCursor(QtCore.Qt.WaitCursor))
        messagebox = QMessageBox()
        messagebox.setStyleSheet("""
                                  *{
@@ -110,6 +111,7 @@ class MainsignupWindow(QWidget):
        if self.username.text() != "" and self.username.text() != "" and (self.password.text() != ""):
           if re.fullmatch(regex,self.email.text()):
                if(len(self.password.text())<6 or not re.search("[a-z]", self.password.text()) or not re.search("[A-Z]", self.password.text()) or not re.search("[0-9]", self.password.text()) or not re.search("[@#$%^&+=]", self.password.text())):
+                   QApplication.restoreOverrideCursor()
                    messagebox.setIcon(QMessageBox.Warning)
                    messagebox.setWindowTitle("Invalid Password")
                    messagebox.setText("Your password must be 6 caracters or more and more secure")
@@ -123,26 +125,31 @@ class MainsignupWindow(QWidget):
                     hashed_password = bcrypt.hashpw(self.password.text().encode('utf-8'), salt)
                     user = {"username":self.username.text().lower(),"email":self.email.text().lower(),"password":hashed_password}
                     try:
+                        
                          collection.insert_one(user)
                          messagebox.setIcon(QMessageBox.Information)
                          messagebox.setWindowTitle("Success")
                          messagebox.setText("You successfully Signup.Redirecting to Login Menu...")
+                         QApplication.restoreOverrideCursor()
                          messagebox.exec_()
                          self.close()  
                          self.home_window = MainloginWindow()  
                          self.home_window.show()
                     except pymongo.errors.DuplicateKeyError:
+                         QApplication.restoreOverrideCursor()
                          messagebox.setIcon(QMessageBox.Warning)
                          messagebox.setWindowTitle("Duplicate")
                          messagebox.setText("Email or Username or Both already exist.")
                          messagebox.exec_()
-          else: 
+          else:   
+                   QApplication.restoreOverrideCursor()
                    messagebox.setIcon(QMessageBox.Warning)
                    messagebox.setWindowTitle("Invalid Email")
                    messagebox.setText("Your email is invalid")
                    messagebox.exec_()
            
        else:
+           QApplication.restoreOverrideCursor()
            messagebox.setIcon(QMessageBox.Warning)
            messagebox.setWindowTitle("Fill Form")
            messagebox.setText("Fill the form to signup")

@@ -81,6 +81,7 @@ class MainloginWindow(QWidget):
             self.home_window = MainHomeWindow()  
             self.home_window.show()
      def log(self):
+       self.login.setCursor(QCursor(QtCore.Qt.WaitCursor))
        messagebox = QMessageBox()
        messagebox.setStyleSheet("""
                                  *{
@@ -105,6 +106,7 @@ class MainloginWindow(QWidget):
        if self.email.text() != ""  and self.password.text() != "":
           if re.fullmatch(regex,self.email.text()):
                if(len(self.password.text())<6):
+                   QApplication.restoreOverrideCursor()
                    messagebox.setIcon(QMessageBox.Warning)
                    messagebox.setWindowTitle("Invalid Password")
                    messagebox.setText("Your password must be 6 caracters or more")
@@ -123,6 +125,7 @@ class MainloginWindow(QWidget):
                               messagebox.setIcon(QMessageBox.Information)
                               messagebox.setWindowTitle("Success")
                               messagebox.setText("You successfully Logged in")
+                              QApplication.restoreOverrideCursor()
                               messagebox.exec_()
                               self.close()  
                               if result2:
@@ -132,18 +135,21 @@ class MainloginWindow(QWidget):
                                    self.home_window = MainChatWindow(username=result["username"],trialclose=True,email=result["email"])  
                                    self.home_window.show()
                     else:
+                              QApplication.restoreOverrideCursor()
                               messagebox.setIcon(QMessageBox.Information)
                               messagebox.setWindowTitle("Invalid User")
                               messagebox.setText("User Not Found Try to Signup")
                               messagebox.exec_()
                               
           else: 
+                   QApplication.restoreOverrideCursor()
                    messagebox.setIcon(QMessageBox.Warning)
                    messagebox.setWindowTitle("Invalid Email")
                    messagebox.setText("Your email is invalid")
                    messagebox.exec_()
            
        else:
+           QApplication.restoreOverrideCursor()
            messagebox.setIcon(QMessageBox.Warning)
            messagebox.setWindowTitle("Fill Form")
            messagebox.setText("Fill the form to signup")

@@ -138,6 +138,7 @@ class MainHomeWindow(QMainWindow):
           self.chat_window.show()
           self.chat_window.raise_()
           self.close()
+    
      
      
     

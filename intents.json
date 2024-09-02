@@ -1,566 +1,584 @@
 {
-  "intents": [
-    {
-      "tag": "greeting",
-      "patterns": [
-        "Hi",
-        "Hello",
-        "Hey",
-        "How are you?",
-        "What's up?",
-        "Good morning",
-        "Good afternoon",
-        "Good evening",
-        "Hey there",
-        "Hi there",
-        "Yo"
-      ],
-      "responses": [
-        "Hello! How can I assist you today?",
-        "Hi there! What can I do for you?",
-        "Hey! How's your day going?",
-        "Hello! What can I help with?",
-        "Hi! How can I be of service?"
-      ]
-    },
-    {
-      "tag": "goodbye",
-      "patterns": [
-        "Bye",
-        "Goodbye",
-        "See you later",
-        "Take care",
-        "Catch you later",
-        "Have a great day",
-        "Farewell",
-        "See you soon",
-        "Good night"
-      ],
-      "responses": [
-        "Goodbye! Have a great day!",
-        "See you later! Take care!",
-        "Farewell! Hope to see you soon!",
-        "Bye! Feel free to come back anytime.",
-        "Take care! Have a wonderful day!"
-      ]
-    },
-    {
-      "tag": "thanks",
-      "patterns": [
-        "Thanks",
-        "Thank you",
-        "I appreciate it",
-        "Much appreciated",
-        "Thanks a lot",
-        "Thank you so much",
-        "Thanks for your help"
-      ],
-      "responses": [
-        "You're welcome!",
-        "My pleasure!",
-        "Glad I could help!",
-        "Anytime!",
-        "Happy to assist!"
-      ]
-    },
-    {
-      "tag": "how_are_you",
-      "patterns": [
-        "How are you?",
-        "How's it going?",
-        "How are you doing?",
-        "What's up?",
-        "How have you been?",
-        "How's everything?"
-      ],
-      "responses": [
-        "I'm just a bot, but I'm here and ready to help!",
-        "I'm doing well, thank you! How can I assist you today?",
-        "I'm here to help! What can I do for you?",
-        "I’m here to assist you. How can I help?",
-        "I'm doing great! How can I assist you today?"
-      ]
-    },
-    {
-      "tag": "weather",
-      "patterns": [
-        "What's the weather like?",
-        "How's the weather today?",
-        "Is it going to rain?",
-        "What's the forecast?",
-        "Do I need an umbrella today?",
-        "How warm is it outside?",
-        "Will it be sunny?"
-      ],
-      "responses": [
-        "I'm not able to check the weather, but you can find the latest updates on weather websites or apps.",
-        "I can't provide current weather updates. Please check a weather service for the most accurate information.",
-        "For weather forecasts, I recommend using a weather app or website."
-      ]
-    },
-    {
-      "tag": "time",
-      "patterns": [
-        "What time is it?",
-        "What's the current time?",
-        "Do you know the time?",
-        "Can you tell me the time?",
-        "What's the time now?"
-      ],
-      "responses": [
-        "I can't check the time, but you can find the current time on your device.",
-        "I'm not able to provide the current time. Please check your device's clock.",
-        "For the current time, please refer to your device or a clock."
-      ]
-    },
-    {
-      "tag": "jokes",
-      "patterns": [
-        "Tell me a joke",
-        "Do you know any jokes?",
-        "Make me laugh",
-        "Can you share a funny joke?",
-        "I need a joke"
-      ],
-      "responses": [
-        "Why don't scientists trust atoms? Because they make up everything!",
-        "Why did the scarecrow win an award? Because he was outstanding in his field!",
-        "What do you call fake spaghetti? An impasta!",
-        "Why don't skeletons fight each other? They don't have the guts!"
-      ]
-    },
-    {
-      "tag": "advice",
-      "patterns": [
-        "Can you give me some advice?",
-        "What should I do?",
-        "Do you have any tips?",
-        "I need some advice",
-        "Can you help me with advice?"
-      ],
-      "responses": [
-        "Always be kind to others; it makes the world a better place.",
-        "When in doubt, trust your instincts and do what feels right.",
-        "Remember to take time for yourself and prioritize self-care.",
-        "Setting small goals can help you achieve big dreams."
-      ]
-    },
-    {
-      "tag": "common_questions",
-      "patterns": [
-        "What is your name?",
-        "What can you do?",
-        "How do you work?",
-        "Can you answer questions?",
-        "What information can you provide?",
-        "Are you a chatbot?",
-        "How can you help me?",
-        "What services do you offer?"
-      ],
-      "responses": [
-        "I'm a chatbot designed to assist with common questions and provide information.",
-        "I can help with a variety of questions and provide information on many topics.",
-        "I work by understanding your questions and providing relevant responses.",
-        "Yes, I'm a chatbot here to assist you with your queries."
-      ]
-    },
-    {
-      "tag": "recommendations",
-      "patterns": [
-        "Can you recommend a book?",
-        "What movie should I watch?",
-        "Do you have any music suggestions?",
-        "Can you suggest a restaurant?",
-        "What are some good shows to watch?"
-      ],
-      "responses": [
-        "If you're into science fiction, I recommend 'Dune' by Frank Herbert.",
-        "For a great movie, try 'The Shawshank Redemption.'",
-        "How about listening to 'Bohemian Rhapsody' by Queen?",
-        "If you're looking for a good meal, try the local Italian restaurant.",
-        "You might enjoy watching 'Breaking Bad' or 'The Crown'."
-      ]
-    },
-    {
-      "tag": "personal_information",
-      "patterns": [
-        "What's your favorite color?",
-        "Do you have a favorite food?",
-        "What's your favorite hobby?",
-        "What do you like to do?",
-        "Do you have any pets?"
-      ],
-      "responses": [
-        "I don't have personal preferences, but I'm here to help with your questions!",
-        "As a chatbot, I don't have personal likes or dislikes, but I'm here to assist you.",
-        "I don't have hobbies or personal interests, but I enjoy helping you with your inquiries!"
-      ]
-    },
-    {
-      "tag": "current_events",
-      "patterns": [
-        "What is happening in the world right now?",
-        "Can you tell me about current events?",
-        "What is the latest news?",
-        "Are there any major news stories?",
-        "What is trending right now?"
-      ],
-      "responses": [
-        "I can't provide real-time news, but you can check major news websites for the latest updates.",
-        "For current events, I recommend visiting news outlets or using news apps for the most recent information.",
-        "I don’t have access to live news updates. For the latest stories, please refer to news websites or apps."
-      ]
-    },
-    {
-      "tag": "sports",
-      "patterns": [
-        "What is the score of the game?",
-        "Can you tell me about recent sports results?",
-        "Who won the latest match?",
-        "What are the current sports standings?",
-        "Do you know the latest sports news?"
-      ],
-      "responses": [
-        "I can't check live sports scores. Please visit sports websites or apps for the latest updates.",
-        "For the most recent sports results, check sports news websites or apps.",
-        "I don’t have access to live sports scores. Refer to sports news outlets for current standings and results."
-      ]
-    },
-    {
-      "tag": "holidays",
-      "patterns": [
-        "What are some upcoming holidays?",
-        "When is the next public holiday?",
-        "Can you tell me about holiday traditions?",
-        "What are some popular holidays?",
-        "When is the next long weekend?"
-      ],
-      "responses": [
-        "Upcoming holidays vary by location. Check a local calendar or holiday website for details.",
-        "For information on public holidays, refer to your country is official holiday calendar.",
-        "Popular holidays include Christmas, New Year is, and Thanksgiving. Traditions vary by culture and region."
-      ]
-    },
-    {
-      "tag": "health",
-      "patterns": [
-        "How can I stay healthy?",
-        "What are some tips for a healthy lifestyle?",
-        "Can you give me advice on fitness?",
-        "What should I eat to be healthy?",
-        "How can I improve my well-being?"
-      ],
-      "responses": [
-        "Maintaining a balanced diet, exercising regularly, and getting enough sleep are key to staying healthy.",
-        "For a healthy lifestyle, focus on eating fruits, vegetables, and whole grains, and stay active.",
-        "Regular exercise, hydration, and a balanced diet can improve your overall well-being.",
-        "Consider setting fitness goals and finding activities you enjoy to stay motivated and healthy."
-      ]
-    },
-    {
-      "tag": "travel",
-      "patterns": [
-        "Can you recommend a travel destination?",
-        "What are some popular travel spots?",
-        "Where should I go for a vacation?",
-        "What are the top tourist attractions?",
-        "Do you have any travel tips?"
-      ],
-      "responses": [
-        "Popular travel destinations include Paris, Tokyo, and New York City. Each offers unique experiences.",
-        "For vacation, consider visiting beautiful places like Bali, the Swiss Alps, or the beaches of Thailand.",
-        "Top tourist attractions include the Eiffel Tower in Paris, the Great Wall of China, and the Grand Canyon.",
-        "Travel tips include researching your destination, packing light, and learning a few basic phrases in the local language."
-      ]
-    },
-    {
-      "tag": "food",
-      "patterns": [
-        "What are some easy recipes?",
-        "Can you suggest a good restaurant?",
-        "What's a popular dish in [country]?",
-        "Do you have any cooking tips?",
-        "What is a healthy meal to cook?"
-      ],
-      "responses": [
-        "For easy recipes, try pasta dishes, stir-fries, or salads.",
-        "A good restaurant can be found by checking local reviews or asking for recommendations.",
-        "Popular dishes vary by country; for example, sushi in Japan or tacos in Mexico.",
-        "Cooking tips include using fresh ingredients, following recipes carefully, and tasting as you cook.",
-        "A healthy meal option could be a grilled chicken salad or a quinoa and vegetable stir-fry."
-      ]
-    },
-    {
-      "tag": "finance",
-      "patterns": [
-        "How can I save money?",
-        "What are some tips for budgeting?",
-        "Can you give me financial advice?",
-        "What should I do about debt?",
-        "How can I invest wisely?"
-      ],
-      "responses": [
-        "To save money, create a budget, reduce unnecessary expenses, and set financial goals.",
-        "Budgeting tips include tracking your expenses, setting limits on spending, and saving regularly.",
-        "Financial advice often includes budgeting, saving for emergencies, and investing for the future.",
-        "To manage debt, consider creating a repayment plan and seeking professional advice if needed.",
-        "Invest wisely by researching options, diversifying your portfolio, and considering your risk tolerance."
-      ]
-    },
-    {
-      "tag": "education",
-      "patterns": [
-        "What are some good study habits?",
-        "How can I improve my learning?",
-        "Can you recommend online courses?",
-        "What should I study to get a job in tech?",
-        "How can I stay motivated in school?"
-      ],
-      "responses": [
-        "Good study habits include setting goals, creating a study schedule, and finding a quiet place to study.",
-        "To improve learning, actively engage with the material, take notes, and review regularly.",
-        "Online courses can be found on platforms like Coursera, Udemy, and edX.",
-        "For a career in tech, consider studying computer science, programming, or data science.",
-        "Staying motivated in school can be achieved by setting personal goals, staying organized, and finding a study group."
-      ]
-    },
-    {
-      "tag": "movies",
-      "patterns": [
-        "What are some good movies to watch?",
-        "Can you suggest a movie for me?",
-        "What is a popular film right now?",
-        "Do you have any movie recommendations?",
-        "What is a great movie to watch with friends?"
-      ],
-      "responses": [
-        "Some great movies include 'Inception', 'The Matrix', and 'The Shawshank Redemption'.",
-        "For a movie recommendation, try 'The Grand Budapest Hotel' or 'Parasite'.",
-        "Popular films right now can be checked on movie review sites or streaming services.",
-        "Consider watching 'The Avengers' or 'Guardians of the Galaxy' for a fun group movie night.",
-        "For a movie with friends, 'Superbad' or 'The Hangover' are great choices."
-      ]
-    },
-    {
-      "tag": "books",
-      "patterns": [
-        "What are some good books to read?",
-        "Can you recommend a book?",
-        "What is a popular book right now?",
-        "Do you have any book suggestions?",
-        "What is a great novel for me to read?"
-      ],
-      "responses": [
-        "Recommended books include 'To Kill a Mockingbird', '1984', and 'The Catcher in the Rye'.",
-        "For a book recommendation, try 'The Great Gatsby' or 'The Road'.",
-        "Popular books can be found on bestseller lists or book review websites.",
-        "Consider reading 'The Alchemist' or 'Sapiens' for intriguing and thought-provoking reads.",
-        "A great novel could be 'Pride and Prejudice' or 'Brave New World'."
-      ]
-    },
-    {
-      "tag": "hobbies",
-      "patterns": [
-        "What are some popular hobbies?",
-        "Can you suggest a hobby for me?",
-        "What is a fun activity to do?",
-        "Do you have any hobby ideas?",
-        "What are some interesting hobbies to try?"
-      ],
-      "responses": [
-        "Popular hobbies include reading, gardening, cooking, and hiking.",
-        "Consider trying hobbies like painting, playing an instrument, or photography.",
-        "Fun activities might include board games, puzzles, or exploring new recipes.",
-        "Hobby ideas include knitting, coding, or learning a new language.",
-        "Interesting hobbies to try could be rock climbing, writing, or birdwatching."
-      ]
-    },
-    {
-      "tag": "technology",
-      "patterns": [
-        "What are the latest tech gadgets?",
-        "Can you tell me about new technology?",
-        "What is trending in tech?",
-        "What are some new innovations?",
-        "What is the future of technology?"
-      ],
-      "responses": [
-        "Latest tech gadgets include smartwatches, wireless earbuds, and new smartphone models.",
-        "New technology trends include AI advancements, blockchain, and smart home devices.",
-        "Trending in tech are innovations like augmented reality, 5G, and autonomous vehicles.",
-        "Recent innovations include foldable smartphones and advanced AI applications.",
-        "The future of technology may involve more integration of AI, improved virtual reality, and smart automation."
-      ]
-    },
-    {
-      "tag": "self_care",
-      "patterns": [
-        "What are some self-care tips?",
-        "How can I take care of myself?",
-        "Can you give me advice on self-care?",
-        "What are some ways to relax?",
-        "How can I manage stress?"
-      ],
-      "responses": [
-        "Self-care tips include taking time for yourself, practicing mindfulness, and maintaining a healthy lifestyle.",
-        "To take care of yourself, prioritize sleep, exercise, and relaxation techniques.",
-        "Self-care advice includes setting boundaries, engaging in hobbies, and seeking support when needed.",
-        "Ways to relax might include meditation, reading a book, or taking a walk.",
-        "Managing stress can involve techniques like deep breathing, exercise, and talking to a friend or therapist."
-      ]
-    },
-    {
-      "tag": "relationships",
-      "patterns": [
-        "How can I improve my relationship?",
-        "What are some tips for a healthy relationship?",
-        "Can you give me advice on relationships?",
-        "How do I handle relationship problems?",
-        "What makes a good relationship?"
-      ],
-      "responses": [
-        "Improving relationships often involves communication, understanding, and compromise.",
-        "Tips for a healthy relationship include being honest, respecting each other, and spending quality time together.",
-        "Relationship advice includes listening actively, showing appreciation, and resolving conflicts constructively.",
-        "Handling relationship problems can be done through open dialogue, seeking counseling, and addressing issues calmly.",
-        "A good relationship is built on trust, mutual respect, and shared values."
-      ]
-    }
-    ,{
-      "tag": "fact",
-      "patterns": [
-        "Tell me an interesting fact.",
-        "Share a fun fact with me.",
-        "I want to learn something new.",
-        "Give me a random fact.",
-        "What's an interesting fact about space?"
-      ],
-      "responses": [
-        "Did you know that honey never spoils? Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still edible.",
-        "An octopus has three hearts and blue blood!",
-        "The Eiffel Tower can be 15 cm taller during the summer due to thermal expansion.",
-        "Bananas are berries, but strawberries aren't!",
-        "There are more stars in the universe than grains of sand on all the Earth's beaches."
-      ]
-    },
-    {
-      "tag": "funfact",
-      "patterns": [
-        "Tell me a fun fact.",
-        "I want to hear something funny.",
-        "Share a quirky fact.",
-        "Give me a cool fact.",
-        "Tell me a surprising fact."
-      ],
-      "responses": [
-        "Did you know that cows have best friends and get stressed when they're separated?",
-        "A group of flamingos is called a 'flamboyance'.",
-        "You can fit about 1.3 million Earths inside the Sun!",
-        "Wombat poop is cube-shaped.",
-        "A day on Venus is longer than a year on Venus."
-      ]
-    },
-    {
-      "tag": "reminder",
-      "patterns": [
-        "Remind me to call John later.",
-        "Set a reminder for my meeting at 3 PM.",
-        "Can you remind me to buy groceries?",
-        "I need a reminder to water the plants.",
-        "Help me remember to finish the report by tomorrow."
-      ],
-      "responses": [
-        "I've set a reminder to call John later.",
-        "You'll be reminded about your meeting at 3 PM.",
-        "Don't worry, I'll remind you to buy groceries.",
-        "I've noted to remind you to water the plants.",
-        "You'll get a reminder to finish the report by tomorrow."
-      ]
-    },
-    {
-      "tag": "quote",
-      "patterns": [
-        "Share an inspirational quote.",
-        "Give me a motivational quote.",
-        "I need a quote for today.",
-        "Tell me a famous quote.",
-        "What's a good quote to start the day?"
-      ],
-      "responses": [
-        "The only way to do great work is to love what you do. Steve Jobs",
-        "Believe you can and you're halfway there. Theodore Roosevelt",
-        "You miss 100% of the shots you don’t take. Wayne Gretzky",
-        "The best way to predict the future is to create it. Peter Drucker",
-        "Act as if what you do makes a difference. It does. William James"
-      ]
-    },
-    {
-      "tag": "help",
-      "patterns": [
-        "How do I use this feature?",
-        "I need help with the app.",
-        "Can you assist me with something?",
-        "I have a question about the functionality.",
-        "Tell me how to navigate this."
-      ],
-      "responses": [
-        "I’m here to help! What do you need assistance with?",
-        "Feel free to ask me any questions about how to use the app.",
-        "To get started, you can check the user guide or ask me for specific help.",
-        "I can guide you through the functionality. What do you need help with?",
-        "Let me know what you’re having trouble with, and I'll assist you."
-      ]
-    },
-    {
-      "tag": "recipe",
-      "patterns": [
-        "What's a good recipe for dinner?",
-        "Can you suggest a dessert recipe?",
-        "I need a recipe for a quick meal.",
-        "Share a recipe for a healthy snack.",
-        "Give me a recipe idea for a party."
-      ],
-      "responses": [
-        "How about trying a delicious spaghetti carbonara? Here is a simple recipe...",
-        "For dessert, you can make chocolate lava cakes. Here is how to do it...",
-        "A quick and easy meal is a chicken stir-fry. Here is the recipe...",
-        "Try making a healthy smoothie with spinach, banana, and almond milk...",
-        "For a party, a crowd-pleasing recipe is mini quiches. Here is a recipe you can use..."
-      ]
-    },
-    {
-      "tag": "event",
-      "patterns": [
-        "What events are happening this weekend?",
-        "Tell me about upcoming events.",
-        "Any special events happening soon?",
-        "What is going on in the city this week?",
-        "Give me information on local events."
-      ],
-      "responses": [
-        "This weekend, you can check out the local art festival or the outdoor music concert.",
-        "Upcoming events include a food truck rally and a charity run next month.",
-        "There is a book fair and a film screening happening soon.",
-        "Local events this week include a farmers' market and a community theater play.",
-        "You might be interested in the tech conference and the weekend craft fair."
-      ]
-    },
-    {
-      "tag": "advice",
-      "patterns": [
-        "Give me some advice.",
-        "What is your advice on this?",
-        "Can you offer any tips?",
-        "I need some guidance.",
-        "What is your best piece of advice?"
-      ],
-      "responses": [
-        "Always trust your instincts and follow your passion.",
-        "Stay positive and keep working towards your goals.",
-        "Seek feedback and be open to learning and growing.",
-        "Don’t be afraid to take risks; they often lead to great opportunities.",
-        "Manage your time wisely and prioritize your well being."
-      ]
-    }
-  ]
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "Hey",
+                "How are you?",
+                "What's up?",
+                "Good morning",
+                "Good afternoon",
+                "Good evening",
+                "Hey there",
+                "Hi there",
+                "Yo"
+            ],
+            "responses": [
+                "Hello! How can I assist you today?",
+                "Hi there! What can I do for you?",
+                "Hey! How's your day going?",
+                "Hello! What can I help with?",
+                "Hi! How can I be of service?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "Goodbye",
+                "See you later",
+                "Take care",
+                "Catch you later",
+                "Have a great day",
+                "Farewell",
+                "See you soon",
+                "Good night"
+            ],
+            "responses": [
+                "Goodbye! Have a great day!",
+                "See you later! Take care!",
+                "Farewell! Hope to see you soon!",
+                "Bye! Feel free to come back anytime.",
+                "Take care! Have a wonderful day!"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "I appreciate it",
+                "Much appreciated",
+                "Thanks a lot",
+                "Thank you so much",
+                "Thanks for your help"
+            ],
+            "responses": [
+                "You're welcome!",
+                "My pleasure!",
+                "Glad I could help!",
+                "Anytime!",
+                "Happy to assist!"
+            ]
+        },
+        {
+            "tag": "how_are_you",
+            "patterns": [
+                "How are you?",
+                "How's it going?",
+                "How are you doing?",
+                "What's up?",
+                "How have you been?",
+                "How's everything?"
+            ],
+            "responses": [
+                "I'm just a bot, but I'm here and ready to help!",
+                "I'm doing well, thank you! How can I assist you today?",
+                "I'm here to help! What can I do for you?",
+                "I\u00e2\u20ac\u2122m here to assist you. How can I help?",
+                "I'm doing great! How can I assist you today?"
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "What's the weather like?",
+                "How's the weather today?",
+                "Is it going to rain?",
+                "What's the forecast?",
+                "Do I need an umbrella today?",
+                "How warm is it outside?",
+                "Will it be sunny?"
+            ],
+            "responses": [
+                "I'm not able to check the weather, but you can find the latest updates on weather websites or apps.",
+                "I can't provide current weather updates. Please check a weather service for the most accurate information.",
+                "For weather forecasts, I recommend using a weather app or website."
+            ]
+        },
+        {
+            "tag": "time",
+            "patterns": [
+                "What time is it?",
+                "What's the current time?",
+                "Do you know the time?",
+                "Can you tell me the time?",
+                "What's the time now?"
+            ],
+            "responses": [
+                "I can't check the time, but you can find the current time on your device.",
+                "I'm not able to provide the current time. Please check your device's clock.",
+                "For the current time, please refer to your device or a clock."
+            ]
+        },
+        {
+            "tag": "jokes",
+            "patterns": [
+                "Tell me a joke",
+                "Do you know any jokes?",
+                "Make me laugh",
+                "Can you share a funny joke?",
+                "I need a joke"
+            ],
+            "responses": [
+                "Why don't scientists trust atoms? Because they make up everything!",
+                "Why did the scarecrow win an award? Because he was outstanding in his field!",
+                "What do you call fake spaghetti? An impasta!",
+                "Why don't skeletons fight each other? They don't have the guts!"
+            ]
+        },
+        {
+            "tag": "advice",
+            "patterns": [
+                "Can you give me some advice?",
+                "What should I do?",
+                "Do you have any tips?",
+                "I need some advice",
+                "Can you help me with advice?"
+            ],
+            "responses": [
+                "Always be kind to others; it makes the world a better place.",
+                "When in doubt, trust your instincts and do what feels right.",
+                "Remember to take time for yourself and prioritize self-care.",
+                "Setting small goals can help you achieve big dreams."
+            ]
+        },
+        {
+            "tag": "common_questions",
+            "patterns": [
+                "What is your name?",
+                "What can you do?",
+                "How do you work?",
+                "Can you answer questions?",
+                "What information can you provide?",
+                "Are you a chatbot?",
+                "How can you help me?",
+                "What services do you offer?"
+            ],
+            "responses": [
+                "I'm a chatbot designed to assist with common questions and provide information.",
+                "I can help with a variety of questions and provide information on many topics.",
+                "I work by understanding your questions and providing relevant responses.",
+                "Yes, I'm a chatbot here to assist you with your queries."
+            ]
+        },
+        {
+            "tag": "recommendations",
+            "patterns": [
+                "Can you recommend a book?",
+                "What movie should I watch?",
+                "Do you have any music suggestions?",
+                "Can you suggest a restaurant?",
+                "What are some good shows to watch?"
+            ],
+            "responses": [
+                "If you're into science fiction, I recommend 'Dune' by Frank Herbert.",
+                "For a great movie, try 'The Shawshank Redemption.'",
+                "How about listening to 'Bohemian Rhapsody' by Queen?",
+                "If you're looking for a good meal, try the local Italian restaurant.",
+                "You might enjoy watching 'Breaking Bad' or 'The Crown'."
+            ]
+        },
+        {
+            "tag": "personal_information",
+            "patterns": [
+                "What's your favorite color?",
+                "Do you have a favorite food?",
+                "What's your favorite hobby?",
+                "What do you like to do?",
+                "Do you have any pets?"
+            ],
+            "responses": [
+                "I don't have personal preferences, but I'm here to help with your questions!",
+                "As a chatbot, I don't have personal likes or dislikes, but I'm here to assist you.",
+                "I don't have hobbies or personal interests, but I enjoy helping you with your inquiries!"
+            ]
+        },
+        {
+            "tag": "current_events",
+            "patterns": [
+                "What is happening in the world right now?",
+                "Can you tell me about current events?",
+                "What is the latest news?",
+                "Are there any major news stories?",
+                "What is trending right now?"
+            ],
+            "responses": [
+                "I can't provide real-time news, but you can check major news websites for the latest updates.",
+                "For current events, I recommend visiting news outlets or using news apps for the most recent information.",
+                "I don\u00e2\u20ac\u2122t have access to live news updates. For the latest stories, please refer to news websites or apps."
+            ]
+        },
+        {
+            "tag": "sports",
+            "patterns": [
+                "What is the score of the game?",
+                "Can you tell me about recent sports results?",
+                "Who won the latest match?",
+                "What are the current sports standings?",
+                "Do you know the latest sports news?"
+            ],
+            "responses": [
+                "I can't check live sports scores. Please visit sports websites or apps for the latest updates.",
+                "For the most recent sports results, check sports news websites or apps.",
+                "I don\u00e2\u20ac\u2122t have access to live sports scores. Refer to sports news outlets for current standings and results."
+            ]
+        },
+        {
+            "tag": "holidays",
+            "patterns": [
+                "What are some upcoming holidays?",
+                "When is the next public holiday?",
+                "Can you tell me about holiday traditions?",
+                "What are some popular holidays?",
+                "When is the next long weekend?"
+            ],
+            "responses": [
+                "Upcoming holidays vary by location. Check a local calendar or holiday website for details.",
+                "For information on public holidays, refer to your country is official holiday calendar.",
+                "Popular holidays include Christmas, New Year is, and Thanksgiving. Traditions vary by culture and region."
+            ]
+        },
+        {
+            "tag": "health",
+            "patterns": [
+                "How can I stay healthy?",
+                "What are some tips for a healthy lifestyle?",
+                "Can you give me advice on fitness?",
+                "What should I eat to be healthy?",
+                "How can I improve my well-being?"
+            ],
+            "responses": [
+                "Maintaining a balanced diet, exercising regularly, and getting enough sleep are key to staying healthy.",
+                "For a healthy lifestyle, focus on eating fruits, vegetables, and whole grains, and stay active.",
+                "Regular exercise, hydration, and a balanced diet can improve your overall well-being.",
+                "Consider setting fitness goals and finding activities you enjoy to stay motivated and healthy."
+            ]
+        },
+        {
+            "tag": "travel",
+            "patterns": [
+                "Can you recommend a travel destination?",
+                "What are some popular travel spots?",
+                "Where should I go for a vacation?",
+                "What are the top tourist attractions?",
+                "Do you have any travel tips?"
+            ],
+            "responses": [
+                "Popular travel destinations include Paris, Tokyo, and New York City. Each offers unique experiences.",
+                "For vacation, consider visiting beautiful places like Bali, the Swiss Alps, or the beaches of Thailand.",
+                "Top tourist attractions include the Eiffel Tower in Paris, the Great Wall of China, and the Grand Canyon.",
+                "Travel tips include researching your destination, packing light, and learning a few basic phrases in the local language."
+            ]
+        },
+        {
+            "tag": "food",
+            "patterns": [
+                "What are some easy recipes?",
+                "Can you suggest a good restaurant?",
+                "What's a popular dish in [country]?",
+                "Do you have any cooking tips?",
+                "What is a healthy meal to cook?"
+            ],
+            "responses": [
+                "For easy recipes, try pasta dishes, stir-fries, or salads.",
+                "A good restaurant can be found by checking local reviews or asking for recommendations.",
+                "Popular dishes vary by country; for example, sushi in Japan or tacos in Mexico.",
+                "Cooking tips include using fresh ingredients, following recipes carefully, and tasting as you cook.",
+                "A healthy meal option could be a grilled chicken salad or a quinoa and vegetable stir-fry."
+            ]
+        },
+        {
+            "tag": "finance",
+            "patterns": [
+                "How can I save money?",
+                "What are some tips for budgeting?",
+                "Can you give me financial advice?",
+                "What should I do about debt?",
+                "How can I invest wisely?"
+            ],
+            "responses": [
+                "To save money, create a budget, reduce unnecessary expenses, and set financial goals.",
+                "Budgeting tips include tracking your expenses, setting limits on spending, and saving regularly.",
+                "Financial advice often includes budgeting, saving for emergencies, and investing for the future.",
+                "To manage debt, consider creating a repayment plan and seeking professional advice if needed.",
+                "Invest wisely by researching options, diversifying your portfolio, and considering your risk tolerance."
+            ]
+        },
+        {
+            "tag": "education",
+            "patterns": [
+                "What are some good study habits?",
+                "How can I improve my learning?",
+                "Can you recommend online courses?",
+                "What should I study to get a job in tech?",
+                "How can I stay motivated in school?"
+            ],
+            "responses": [
+                "Good study habits include setting goals, creating a study schedule, and finding a quiet place to study.",
+                "To improve learning, actively engage with the material, take notes, and review regularly.",
+                "Online courses can be found on platforms like Coursera, Udemy, and edX.",
+                "For a career in tech, consider studying computer science, programming, or data science.",
+                "Staying motivated in school can be achieved by setting personal goals, staying organized, and finding a study group."
+            ]
+        },
+        {
+            "tag": "movies",
+            "patterns": [
+                "What are some good movies to watch?",
+                "Can you suggest a movie for me?",
+                "What is a popular film right now?",
+                "Do you have any movie recommendations?",
+                "What is a great movie to watch with friends?"
+            ],
+            "responses": [
+                "Some great movies include 'Inception', 'The Matrix', and 'The Shawshank Redemption'.",
+                "For a movie recommendation, try 'The Grand Budapest Hotel' or 'Parasite'.",
+                "Popular films right now can be checked on movie review sites or streaming services.",
+                "Consider watching 'The Avengers' or 'Guardians of the Galaxy' for a fun group movie night.",
+                "For a movie with friends, 'Superbad' or 'The Hangover' are great choices."
+            ]
+        },
+        {
+            "tag": "books",
+            "patterns": [
+                "What are some good books to read?",
+                "Can you recommend a book?",
+                "What is a popular book right now?",
+                "Do you have any book suggestions?",
+                "What is a great novel for me to read?"
+            ],
+            "responses": [
+                "Recommended books include 'To Kill a Mockingbird', '1984', and 'The Catcher in the Rye'.",
+                "For a book recommendation, try 'The Great Gatsby' or 'The Road'.",
+                "Popular books can be found on bestseller lists or book review websites.",
+                "Consider reading 'The Alchemist' or 'Sapiens' for intriguing and thought-provoking reads.",
+                "A great novel could be 'Pride and Prejudice' or 'Brave New World'."
+            ]
+        },
+        {
+            "tag": "hobbies",
+            "patterns": [
+                "What are some popular hobbies?",
+                "Can you suggest a hobby for me?",
+                "What is a fun activity to do?",
+                "Do you have any hobby ideas?",
+                "What are some interesting hobbies to try?"
+            ],
+            "responses": [
+                "Popular hobbies include reading, gardening, cooking, and hiking.",
+                "Consider trying hobbies like painting, playing an instrument, or photography.",
+                "Fun activities might include board games, puzzles, or exploring new recipes.",
+                "Hobby ideas include knitting, coding, or learning a new language.",
+                "Interesting hobbies to try could be rock climbing, writing, or birdwatching."
+            ]
+        },
+        {
+            "tag": "technology",
+            "patterns": [
+                "What are the latest tech gadgets?",
+                "Can you tell me about new technology?",
+                "What is trending in tech?",
+                "What are some new innovations?",
+                "What is the future of technology?"
+            ],
+            "responses": [
+                "Latest tech gadgets include smartwatches, wireless earbuds, and new smartphone models.",
+                "New technology trends include AI advancements, blockchain, and smart home devices.",
+                "Trending in tech are innovations like augmented reality, 5G, and autonomous vehicles.",
+                "Recent innovations include foldable smartphones and advanced AI applications.",
+                "The future of technology may involve more integration of AI, improved virtual reality, and smart automation."
+            ]
+        },
+        {
+            "tag": "self_care",
+            "patterns": [
+                "What are some self-care tips?",
+                "How can I take care of myself?",
+                "Can you give me advice on self-care?",
+                "What are some ways to relax?",
+                "How can I manage stress?"
+            ],
+            "responses": [
+                "Self-care tips include taking time for yourself, practicing mindfulness, and maintaining a healthy lifestyle.",
+                "To take care of yourself, prioritize sleep, exercise, and relaxation techniques.",
+                "Self-care advice includes setting boundaries, engaging in hobbies, and seeking support when needed.",
+                "Ways to relax might include meditation, reading a book, or taking a walk.",
+                "Managing stress can involve techniques like deep breathing, exercise, and talking to a friend or therapist."
+            ]
+        },
+        {
+            "tag": "relationships",
+            "patterns": [
+                "How can I improve my relationship?",
+                "What are some tips for a healthy relationship?",
+                "Can you give me advice on relationships?",
+                "How do I handle relationship problems?",
+                "What makes a good relationship?"
+            ],
+            "responses": [
+                "Improving relationships often involves communication, understanding, and compromise.",
+                "Tips for a healthy relationship include being honest, respecting each other, and spending quality time together.",
+                "Relationship advice includes listening actively, showing appreciation, and resolving conflicts constructively.",
+                "Handling relationship problems can be done through open dialogue, seeking counseling, and addressing issues calmly.",
+                "A good relationship is built on trust, mutual respect, and shared values."
+            ]
+        },
+        {
+            "tag": "fact",
+            "patterns": [
+                "Tell me an interesting fact.",
+                "Share a fun fact with me.",
+                "I want to learn something new.",
+                "Give me a random fact.",
+                "What's an interesting fact about space?"
+            ],
+            "responses": [
+                "Did you know that honey never spoils? Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still edible.",
+                "An octopus has three hearts and blue blood!",
+                "The Eiffel Tower can be 15 cm taller during the summer due to thermal expansion.",
+                "Bananas are berries, but strawberries aren't!",
+                "There are more stars in the universe than grains of sand on all the Earth's beaches."
+            ]
+        },
+        {
+            "tag": "funfact",
+            "patterns": [
+                "Tell me a fun fact.",
+                "I want to hear something funny.",
+                "Share a quirky fact.",
+                "Give me a cool fact.",
+                "Tell me a surprising fact."
+            ],
+            "responses": [
+                "Did you know that cows have best friends and get stressed when they're separated?",
+                "A group of flamingos is called a 'flamboyance'.",
+                "You can fit about 1.3 million Earths inside the Sun!",
+                "Wombat poop is cube-shaped.",
+                "A day on Venus is longer than a year on Venus."
+            ]
+        },
+        {
+            "tag": "reminder",
+            "patterns": [
+                "Remind me to call John later.",
+                "Set a reminder for my meeting at 3 PM.",
+                "Can you remind me to buy groceries?",
+                "I need a reminder to water the plants.",
+                "Help me remember to finish the report by tomorrow."
+            ],
+            "responses": [
+                "I've set a reminder to call John later.",
+                "You'll be reminded about your meeting at 3 PM.",
+                "Don't worry, I'll remind you to buy groceries.",
+                "I've noted to remind you to water the plants.",
+                "You'll get a reminder to finish the report by tomorrow."
+            ]
+        },
+        {
+            "tag": "quote",
+            "patterns": [
+                "Share an inspirational quote.",
+                "Give me a motivational quote.",
+                "I need a quote for today.",
+                "Tell me a famous quote.",
+                "What's a good quote to start the day?"
+            ],
+            "responses": [
+                "The only way to do great work is to love what you do. Steve Jobs",
+                "Believe you can and you're halfway there. Theodore Roosevelt",
+                "You miss 100% of the shots you don\u00e2\u20ac\u2122t take. Wayne Gretzky",
+                "The best way to predict the future is to create it. Peter Drucker",
+                "Act as if what you do makes a difference. It does. William James"
+            ]
+        },
+        {
+            "tag": "help",
+            "patterns": [
+                "How do I use this feature?",
+                "I need help with the app.",
+                "Can you assist me with something?",
+                "I have a question about the functionality.",
+                "Tell me how to navigate this."
+            ],
+            "responses": [
+                "I\u00e2\u20ac\u2122m here to help! What do you need assistance with?",
+                "Feel free to ask me any questions about how to use the app.",
+                "To get started, you can check the user guide or ask me for specific help.",
+                "I can guide you through the functionality. What do you need help with?",
+                "Let me know what you\u00e2\u20ac\u2122re having trouble with, and I'll assist you."
+            ]
+        },
+        {
+            "tag": "recipe",
+            "patterns": [
+                "What's a good recipe for dinner?",
+                "Can you suggest a dessert recipe?",
+                "I need a recipe for a quick meal.",
+                "Share a recipe for a healthy snack.",
+                "Give me a recipe idea for a party."
+            ],
+            "responses": [
+                "How about trying a delicious spaghetti carbonara? Here is a simple recipe...",
+                "For dessert, you can make chocolate lava cakes. Here is how to do it...",
+                "A quick and easy meal is a chicken stir-fry. Here is the recipe...",
+                "Try making a healthy smoothie with spinach, banana, and almond milk...",
+                "For a party, a crowd-pleasing recipe is mini quiches. Here is a recipe you can use..."
+            ]
+        },
+        {
+            "tag": "event",
+            "patterns": [
+                "What events are happening this weekend?",
+                "Tell me about upcoming events.",
+                "Any special events happening soon?",
+                "What is going on in the city this week?",
+                "Give me information on local events."
+            ],
+            "responses": [
+                "This weekend, you can check out the local art festival or the outdoor music concert.",
+                "Upcoming events include a food truck rally and a charity run next month.",
+                "There is a book fair and a film screening happening soon.",
+                "Local events this week include a farmers' market and a community theater play.",
+                "You might be interested in the tech conference and the weekend craft fair."
+            ]
+        },
+        {
+            "tag": "advice",
+            "patterns": [
+                "Give me some advice.",
+                "What is your advice on this?",
+                "Can you offer any tips?",
+                "I need some guidance.",
+                "What is your best piece of advice?"
+            ],
+            "responses": [
+                "Always trust your instincts and follow your passion.",
+                "Stay positive and keep working towards your goals.",
+                "Seek feedback and be open to learning and growing.",
+                "Don\u00e2\u20ac\u2122t be afraid to take risks; they often lead to great opportunities.",
+                "Manage your time wisely and prioritize your well being."
+            ]
+        },
+        {
+            "tag": "sing",
+            "patterns": [
+                ""
+            ],
+            "responses": [
+                "Chang : The former president of the Republican National Committee says that some members of Congress had threatened him over not being able to reach him on Sept. 11 after failing to secure a tax refund."
+            ]
+        },
+        {
+            "tag": "what",
+            "patterns": [
+                ""
+            ],
+            "responses": [
+                "Chang :  A man stands in front of a bus at San Francisco Metropolitan Transit Authority headquarters in New York City Tuesday, Nov. 29, 2017. REUTERS/Brendan McDermid\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+            ]
+        }
+    ]
 }

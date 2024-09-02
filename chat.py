@@ -23,7 +23,7 @@ output_size = data["output_size"]
 all_words = data['all_words']
 tags = data['tags']
 model_state = data["model_state"]
-
+Default_img = "./default-avatar-icon-of-social-media-user-vector.jpg"
 class MainChatWindow(QWidget):
     def __init__(self, username="Me", trialclose=False, email=None, bot_name="AI"):
         super().__init__()
@@ -111,9 +111,11 @@ class MainChatWindow(QWidget):
         """)
         
     def imgpath(self):
-        with open("profile_pic.txt", "r") as f:
-            self.file_path = f.read()
-
+        try:
+            with open("profile_pic.txt", "r") as f:
+                self.file_path = f.read()
+        except FileNotFoundError:
+              self.file_path = Default_img
     def create_round_pixmap(self, pixmap, size):
         # Create a square pixmap with rounded corners
         round_pixmap = QPixmap(size, size)
